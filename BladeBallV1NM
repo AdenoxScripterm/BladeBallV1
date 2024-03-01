@@ -1,0 +1,184 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib")))()
+
+MakeWindow({
+  Hub = {
+    Title = "SalvredHub: Blade Ball",
+    Animation = "By:Salvred"
+  },
+  Key = {
+    KeySystem = true,
+    Title = "Key: SalvredKeyXD",
+    Description = "",
+    KeyLink = "",
+    Keys = {"SalvredKeyXD"},
+    Notifi = {
+      Notifications = true,
+      CorrectKey = "Running the Script...",
+      Incorrectkey = "The key is SalvredKeyXD",
+      CopyKeyLink = "Copied to Clipboard"
+    }
+  }
+})
+
+--[[
+  Hub = {
+    Title = "REDz HUB" -- <string> Titulo do seu script
+    Animation = "by : redz9999" -- <string> Adiciona um texto na animacÃ£o do seu HUB
+  },
+  Key = {
+    KeySystem = <bollean> Adiciona um sistema de chaves
+    Title = "Key System" <string> Adiciona um titulo ao seu sistema de chaves
+    Description = "" <string> Adiciona uma descriÃ§Ã£o ao seu sistema de chaves
+    KeyLink = "" <string> Adicina o Link onde pega a chave do HUB
+    Keys = {"1234"} <table> Adiciona as Chaves
+    Notifi = {
+      Notifications = true <boolean> Adicina notificaÃ§Ãµes ao sistema de chaves
+      CorrectKey = "Running the Script..." <string> notificaÃ§Ã£o quando a chave estiver correta
+      Incorrectkey = "The key is incorrect" <string> notificaÃ§Ã£o quando a chave estiver incorreta
+      CopyKeyLink = "Copied to Clipboard" <string> notificaÃ§Ã£o quando o link da chave fir copiado
+    }
+  }
+]]
+
+
+MinimizeButton({
+  Image = "16550827711",
+  Size = {60, 60},
+  Color = Color3.fromRGB(10, 10, 10),
+  Corner = true,
+  Stroke = false,
+  StrokeColor = Color3.fromRGB(255, 0, 0)
+})
+
+--[[
+  Image = "" <string> imagem do botÃ£o
+  Size = {40, 40} <table> tamanho do botÃ£o
+  Color = Color3.fromRGB(10, 10, 10) <Color3>  Cor do fundo do botÃ¤o
+  Corner = true -- <boolean> Adicina um UICorner
+  Stroke = false <boolean> Adiciona um UIStroke
+  StrokeColor = Color3.fromRGB(255, 0, 0) <Color3> Cor do UIStroke
+]]
+
+
+local Parry = MakeTab({Name = "Parry"})
+
+--[[
+  Name = "Main" <string> Nome da guia
+]]
+
+
+AddButton(Parry, {
+  Name = "AutoParryV1",
+  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry"))()
+    
+  end
+})
+
+--[[
+  Name = "BotÃ£o teste" <string> nome do seu botÃ£o
+  Callback = function()
+    -- funcÃ£o do seu botÃ£o
+  end
+]]
+
+
+local Spam = MakeTab({Name = "Spam"})
+
+--[[
+  Name = "Main" <string> Nome da guia
+]]
+
+
+AddButton(Spam, {
+  Name = "AutoSpamV1",
+  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/DonGabrielle/AutoDetectV4/main/MainBalls"))()
+    
+  end
+})
+
+--[[
+  Name = "BotÃ£o teste" <string> nome do seu botÃ£o
+  Callback = function()
+    -- funcÃ£o do seu botÃ£o
+  end
+]]
+
+
+AddButton(Spam, {
+  Name = "AutoSpamV2",
+  Callback = function()loadstring(game:HttpGet("https://pastebin.com/raw/t2391h1A"))()
+    
+  end
+})
+
+--[[
+  Name = "BotÃ£o teste" <string> nome do seu botÃ£o
+  Callback = function()
+    -- funcÃ£o do seu botÃ£o
+  end
+]]
+
+
+local Detect = MakeTab({Name = "Detect"})
+
+--[[
+  Name = "Main" <string> Nome da guia
+]]
+
+
+AddButton(Spam, {
+  Name = "BlockSpam",
+  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/Toggle%20Block%20Spam"))()
+    
+  end
+})
+
+--[[
+  Name = "BotÃ£o teste" <string> nome do seu botÃ£o
+  Callback = function()
+    -- funcÃ£o do seu botÃ£o
+  end
+]]
+
+
+AddButton(Detect, {
+  Name = "DetectVer2",
+  Callback = function()loadstring(game:HttpGet('https://pastebin.com/raw/HPNBFGSf'))()
+    
+  end
+})
+
+--[[
+  Name = "BotÃ£o teste" <string> nome do seu botÃ£o
+  Callback = function()
+    -- funcÃ£o do seu botÃ£o
+  end
+]]
+
+
+AddButton(Detect, {
+  Name = "DetectVer1",
+  Callback = function()loadstring(game:HttpGet('https://pastebin.com/raw/HPNBFGSf'))()
+    
+  end
+})
+
+--[[
+  Name = "BotÃ£o teste" <string> nome do seu botÃ£o
+  Callback = function()
+    -- funcÃ£o do seu botÃ£o
+  end
+]]
+
+
+local Credits = MakeTab({Name = "Credits"})
+
+--[[
+  Name = "Main" <string> Nome da guia
+]]
+
+
+local section = AddSection(Credits, {"SalvredScripter»"})
+--[[
+  {"Teste"} <table> nome da janela
+]]
