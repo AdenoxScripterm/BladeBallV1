@@ -42,7 +42,7 @@ MakeWindow({
 
 
 MinimizeButton({
-  Image = "16550827711",
+  Image = "rbxassetid://16550827711",
   Size = {60, 60},
   Color = Color3.fromRGB(10, 10, 10),
   Corner = true,
