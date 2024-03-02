@@ -8,8 +8,8 @@ MakeWindow({
   Key = {
     KeySystem = true,
     Title = "Key: SalvredKeyXD",
-    Description = "",
-    KeyLink = "",
+    Description = "Hello",
+    KeyLink = "https://lootdest.com/s?qXE4",
     Keys = {"SalvredKeyXD"},
     Notifi = {
       Notifications = true,
