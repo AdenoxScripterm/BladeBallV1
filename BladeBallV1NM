@@ -14,7 +14,7 @@ MakeWindow({
     Notifi = {
       Notifications = true,
       CorrectKey = "Running the Script...",
-      Incorrectkey = "The key is SalvredKeyXD",
+      Incorrectkey = "Click Get Key",
       CopyKeyLink = "Copied to Clipboard"
     }
   }
