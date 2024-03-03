@@ -68,7 +68,7 @@ local Parry = MakeTab({Name = "Parry"})
 
 AddButton(Parry, {
   Name = "AutoParryV1",
-  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/hosvile/refinement/main/mc%3ablade%20ball%20parry"))()
+  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry"))()
     
   end
 })
