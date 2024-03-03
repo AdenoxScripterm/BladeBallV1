@@ -67,17 +67,19 @@ local Parry = MakeTab({Name = "Parry"})
 ]]
 
 
-AddButton(Parry, {
-  Name = "AutoParryV1",
-  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Parry"))()
+local Toggle = AddToggle(Parry, {
+  Name = "ParryV1",
+  Default = false,
+  Callback = function()loadstring(game:httpget("https://raw.githubusercontent.com/hosvile/refinement/main/mc%3ablade%20ball%20parry"))()
     
   end
 })
 
 --[[
-  Name = "BotÃ£o teste" <string> nome do seu botÃ£o
-  Callback = function()
-    -- funcÃ£o do seu botÃ£o
+  Name = "Toggle teste" <string> nome da sua caixa de seleção
+  Default = false <boolean> valor padrão
+  Callback = function(Value)
+    -- função da sua caixa de seleção
   end
 ]]
 
