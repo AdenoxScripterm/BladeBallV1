@@ -182,7 +182,6 @@ local section = AddSection(Credits, {"SalvredScripter»"})
 ]]
 
 
-
 AddButton(Spam, {
   Name = "SpamV3[Best]",
   Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AdenoxScripterm/AutoDetectV3Spam/main/V3SPAM"))()
