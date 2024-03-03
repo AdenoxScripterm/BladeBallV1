@@ -212,3 +212,20 @@ local Toggle = AddToggle(Spam, {
     -- função da sua caixa de seleção
   end
 ]]
+
+
+local Toggle = AddToggle(Parry, {
+  Name = "AutoParryV2[Mine]",
+  Default = false,
+  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AdenoxScripterm/AutoParryMeV1/main/AutoParry"))()
+    
+  end
+})
+
+--[[
+  Name = "Toggle teste" <string> nome da sua caixa de seleção
+  Default = false <boolean> valor padrão
+  Callback = function(Value)
+    -- função da sua caixa de seleção
+  end
+]]
