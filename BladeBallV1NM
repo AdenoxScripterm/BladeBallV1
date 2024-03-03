@@ -187,3 +187,22 @@ Credits:AddDiscordInvite({
   DiscordIcon = "rbxassetid://15298567397",
   DiscordLink = "https://discord.gg/7aR7kNVt4g"
 })
+
+
+local Spam = AddMobileToggle({
+  Name = "Toggle",
+  Visible = true,
+  Callback = function()loadstring(game:httpget("https://raw.githubusercontent.com/AdenoxScripterm/AutoDetectV3Spam/main/V3SPAM"))()
+    
+  end
+})
+
+MobileToggle.Visible = (false/true)
+
+--[[
+  Name = "Toggle" <string> Nome da caixa de seleção
+  Visible = false <boolean> coloca ela invisivel ou visivel
+  Callback = function()
+    -- função da caixa de seleção
+  end
+]]
