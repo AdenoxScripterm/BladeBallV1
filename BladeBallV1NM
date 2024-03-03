@@ -66,23 +66,19 @@ local Parry = MakeTab({Name = "Parry"})
   Name = "Main" <string> Nome da guia
 ]]
 
-
-local Toggle = AddToggle(Parry, {
-  Name = "ParryV1",
-  Default = true,
+AddButton(Parry, {
+  Name = "AutoParryV1",
   Callback = function()loadstring(game:httpget("https://raw.githubusercontent.com/hosvile/refinement/main/mc%3ablade%20ball%20parry"))()
     
   end
 })
 
 --[[
-  Name = "Toggle teste" <string> nome da sua caixa de seleção
-  Default = false <boolean> valor padrão
-  Callback = function(Value)
-    -- função da sua caixa de seleção
+  Name = "Botão teste" <string> nome do seu botão
+  Callback = function()
+    -- funcão do seu botão
   end
 ]]
-
 
 local Spam = MakeTab({Name = "Spam"})
 
