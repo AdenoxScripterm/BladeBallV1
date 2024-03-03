@@ -204,7 +204,7 @@ local Discord = MakeTab({Name = "Discord"})
 ]]
 
 
-Discord:AddDiscordInvite({
+AddDiscordInvite({
   Name = "redz Hub | Community",
   Description = "Join our discord community to receive information about the next update",
   Logo = "rbxassetid://15298567397",
