@@ -197,15 +197,18 @@ AddButton(Spam, {
 ]]
 
 
-local Discord = MakeTab({Name = "Discord"})
+local Toggle = AddToggle(Spam, {
+  Name = "ToggleSpamV3",
+  Default = false,
+  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AdenoxScripterm/AutoDetectV3Spam/main/V3SPAM"))()
+    
+  end
+})
 
 --[[
-  Name = "Main" <string> Nome da guia
+  Name = "Toggle teste" <string> nome da sua caixa de seleção
+  Default = false <boolean> valor padrão
+  Callback = function(Value)
+    -- função da sua caixa de seleção
+  end
 ]]
-
-
-AddDiscordInvite({
-  Name = "redz Hub | Community",
-  Description = "Join our discord community to receive information about the next update",
-  Logo = "rbxassetid://15298567397",
-  Invite = "https://discord.gg/7aR7kNVt4g"
