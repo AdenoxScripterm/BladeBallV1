@@ -7,10 +7,10 @@ MakeWindow({
   },
   Key = {
     KeySystem = true,
-    Title = "Key: SalvredKeyXD",
-    Description = "Hello",
+    Title = "SalvredHub",
+    Description = "HelloWorld",
     KeyLink = "https://lootdest.com/s?qXE4",
-    Keys = {"SalvredKeyXD"},
+    Keys = {"SalvredKeyXDD"},
     Notifi = {
       Notifications = true,
       CorrectKey = "Running the Script...",
