@@ -180,3 +180,10 @@ local section = AddSection(Credits, {"SalvredScripter»"})
 --[[
   {"Teste"} <table> nome da janela
 ]]
+
+
+Credits:AddDiscordInvite({
+  DiscordTitle = "REDz Hub | Community",
+  DiscordIcon = "rbxassetid://15298567397",
+  DiscordLink = "https://discord.gg/7aR7kNVt4g"
+})
