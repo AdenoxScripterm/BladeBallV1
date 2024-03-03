@@ -69,7 +69,7 @@ local Parry = MakeTab({Name = "Parry"})
 
 local Toggle = AddToggle(Parry, {
   Name = "ParryV1",
-  Default = false,
+  Default = true,
   Callback = function()loadstring(game:httpget("https://raw.githubusercontent.com/hosvile/refinement/main/mc%3ablade%20ball%20parry"))()
     
   end
