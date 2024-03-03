@@ -197,7 +197,13 @@ AddButton(Spam, {
 ]]
 
 
-local Discord = Window:MakeTab({"Discord", "Info"})
+local Discord = MakeTab({Name = "Discord"})
+
+--[[
+  Name = "Main" <string> Nome da guia
+]]
+
+
 Discord:AddDiscordInvite({
   Name = "redz Hub | Community",
   Description = "Join our discord community to receive information about the next update",
