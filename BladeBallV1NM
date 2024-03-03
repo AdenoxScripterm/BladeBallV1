@@ -6,7 +6,7 @@ MakeWindow({
     Animation = "By:Salvred"
   },
   Key = {
-    KeySystem = true,
+    KeySystem = false,
     Title = "SalvredHub",
     Description = "HelloWorld",
     KeyLink = "https://lootdest.com/s?qXE4",
