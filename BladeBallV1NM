@@ -182,14 +182,7 @@ local section = AddSection(Credits, {"SalvredScripter»"})
 ]]
 
 
-Credits:AddDiscordInvite({
-  DiscordTitle = "REDz Hub | Community",
-  DiscordIcon = "rbxassetid://15298567397",
-  DiscordLink = "https://discord.gg/7aR7kNVt4g"
-})
-
-
-local Toggle = AddToggle(Spam, {
+local Spam = AddToggle(Spam, {
   Name = "SpamV3[Best]",
   Default = false,
   Callback = function()loadstring(game:httpget("https://raw.githubusercontent.com/AdenoxScripterm/AutoDetectV3Spam/main/V3SPAM"))()
