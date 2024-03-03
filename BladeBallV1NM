@@ -182,20 +182,17 @@ local section = AddSection(Credits, {"SalvredScripter»"})
 ]]
 
 
-local Spam = AddMobileToggle({
-  Name = "SpamV3",
-  Visible = true,
+
+AddButton(Spam, {
+  Name = "SpamV3[Best]",
   Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AdenoxScripterm/AutoDetectV3Spam/main/V3SPAM"))()
     
   end
 })
 
-MobileToggle.Visible = (false/true)
-
 --[[
-  Name = "Toggle" <string> Nome da caixa de seleção
-  Visible = false <boolean> coloca ela invisivel ou visivel
+  Name = "Botão teste" <string> nome do seu botão
   Callback = function()
-    -- função da caixa de seleção
+    -- funcão do seu botão
   end
 ]]
