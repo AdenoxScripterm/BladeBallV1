@@ -197,43 +197,25 @@ AddButton(Spam, {
 ]]
 
 
-local Toggle = AddToggle(Spam, {
-  Name = "ToggleSpamV3",
-  Default = false,
-  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AdenoxScripterm/AutoDetectV3Spam/main/V3SPAM"))()
-    
-  end
-})
-
---[[
-  Name = "Toggle teste" <string> nome da sua caixa de seleção
-  Default = false <boolean> valor padrão
-  Callback = function(Value)
-    -- função da sua caixa de seleção
-  end
-]]
-
-
-local Toggle = AddToggle(Parry, {
-  Name = "AutoParryV2[Mine]",
-  Default = false,
-  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AdenoxScripterm/AutoParryMeV1/main/AutoParry"))()
-    
-  end
-})
-
---[[
-  Name = "Toggle teste" <string> nome da sua caixa de seleção
-  Default = false <boolean> valor padrão
-  Callback = function(Value)
-    -- função da sua caixa de seleção
-  end
-]]
-
-
 AddButton(Spam, {
   Name = "SpamV4",
   Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AdenoxScripterm/AUTODETECTSPAMV4-WITHV3-/main/SPAMV4"))()
+    
+  end
+})
+
+--[[
+  Name = "Botão teste" <string> nome do seu botão
+  Callback = function()
+    -- funcão do seu botão
+  end
+]]
+
+
+
+AddButton(Parry, {
+  Name = "ParryV2",
+  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AdenoxScripterm/AutoParryMeV1/main/AutoParry"))()
     
   end
 })
