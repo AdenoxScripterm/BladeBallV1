@@ -240,17 +240,6 @@ AddTextBox(Others, {
   Default = "bom dia",
   PlaceholderText = "teste",
   ClearText = true,
-  Callback = function()local kills = 0
-
-local function increaseKills()
-    kills = kills + 1
-end
-
-game.Players.PlayerAdded:Connect(function(player)
-    player.CharacterAdded:Connect(function(character)
-        character:WaitForChild("Humanoid").Died:Connect(function()
-            increaseKills()
-            print("You have killed " .. kills .. " players in this match.")
-        end)
-    end)
-end)
+  Callback = function()local kills=0
+local function increaseKills() kills=kills+1 end
+game.Players.PlayerAdded:Connect(function(player) player.CharacterAdded:Connect(function(character) character:WaitForChild("Humanoid").Died:Connect(function() increaseKills() print("You have killed "..kills.." players in this match.") end) end) end)
