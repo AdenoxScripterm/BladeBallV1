@@ -228,9 +228,29 @@ AddButton(Parry, {
 ]]
 
 
+local Others = MakeTab({Name = "Others"})
 
-Parry:AddDiscordInvite({
-  DiscordTitle = "REDz Hub | Community",
-  DiscordIcon = "rbxassetid://15298567397",
-  DiscordLink = "https://discord.gg/7aR7kNVt4g"
-})
+--[[
+  Name = "Main" <string> Nome da guia
+]]
+
+
+AddTextBox(Others, {
+  Name = "CurrentKills",
+  Default = "bom dia",
+  PlaceholderText = "teste",
+  ClearText = true,
+  Callback = function()local kills = 0
+
+local function increaseKills()
+    kills = kills + 1
+end
+
+game.Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(character)
+        character:WaitForChild("Humanoid").Died:Connect(function()
+            increaseKills()
+            print("You have killed " .. kills .. " players in this match.")
+        end)
+    end)
+end)
