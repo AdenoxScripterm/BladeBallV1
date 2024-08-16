@@ -197,19 +197,7 @@ AddButton(Spam, {
 ]]
 
 
-AddButton(Spam, {
-  Name = "SpamV4",
-  Callback = function()loadstring(game:HttpGet("https://raw.githubusercontent.com/AdenoxScripterm/AUTODETECTSPAMV4-WITHV3-/main/SPAMV4"))()
-    
-  end
-})
-
---[[
-  Name = "Botão teste" <string> nome do seu botão
-  Callback = function()
-    -- funcão do seu botão
-  end
-]]
+VALUE
 
 
 
@@ -235,11 +223,19 @@ local Others = MakeTab({Name = "Others"})
 ]]
 
 
-AddTextBox(Others, {
-  Name = "CurrentKills",
-  Default = "bom dia",
-  PlaceholderText = "teste",
-  ClearText = true,
-  Callback = function()local kills=0
-local function increaseKills() kills=kills+1 end
-game.Players.PlayerAdded:Connect(function(player) player.CharacterAdded:Connect(function(character) character:WaitForChild("Humanoid").Died:Connect(function() increaseKills() print("You have killed "..kills.." players in this match.") end) end) end)
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local kills = 0
+
+-- Crear el label
+local Label = AddTextLabel(Others, tostring(kills))
+
+-- Función para actualizar las kills
+local function onKill()
+    kills = kills + 1
+    Label.Text = tostring(kills)
+end
+
+-- Conectar el evento cuando matas a alguien
+-- Aquí debes reemplazar "KillEvent" con el evento correcto que se dispare cuando consigas una kill en Bladeball
+player.KillEvent.OnClientEvent:Connect(onKill)
