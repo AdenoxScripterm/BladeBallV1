@@ -139,6 +139,7 @@ AddButton(Spam, {
 ]]
 
 
+
 AddButton(Detect, {
   Name = "DetectVer2",
   Callback = function()loadstring(game:HttpGet('https://pastebin.com/raw/HPNBFGSf'))()
@@ -183,7 +184,7 @@ local section = AddSection(Credits, {"SalvredScripter»"})
 
 
 
-y-- Funciones auxiliares
+-- Funciones auxiliares
 local function get_plr()
     return game.Players.LocalPlayer
 end
